@@ -1,17 +1,18 @@
 import React from "react";
 import {View, StyleSheet ,Text, FlatList } from "react-native";
-import { getAllProducts } from "../../services/product";
-import { ProductItem } from "../../components/ProductItem/productItem";
+import { getAllCategories } from "../../../services/category";
+import { CategoryItem } from "../../../components/CategoryItem/categoryItem";
+const categoryList = getAllCategories();
 
-export default function home(){
-    const productList = getAllProducts();
+export default function categories(){
+
 
     return(
         <View style={styles.container}>
             <FlatList 
-            data={productList}
+            data={categoryList}
 
-            renderItem={({item})=><ProductItem productData={item}/>}
+            renderItem={({item})=><CategoryItem categoryData={item}/>}
 
             keyExtractor={item=>item.id.toString()}
             />
@@ -22,7 +23,7 @@ export default function home(){
 
 const styles= StyleSheet.create ({
     container: {
-        flex:1,
+
         marginHorizontal:8
     }
 })

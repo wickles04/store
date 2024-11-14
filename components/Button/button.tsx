@@ -5,13 +5,13 @@ import { styles } from './buttonStyle';
 
 type ButtonProps = {
     text:string,
-    onPress: () => void
+    function: () => void
 }
 
 export function Button(props:ButtonProps) {
   return (
-    <Pressable onPress={props.onPress}>
-        <Text>{props.text}</Text>
+    <Pressable onPress={props.function} style={styles.button}>
+        <Text style={styles.buttonText}>{props.text}</Text>
     </Pressable>
   );
 }

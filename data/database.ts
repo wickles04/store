@@ -6,18 +6,18 @@ export const data: Data = {
     categories: [
         {
             id: 1,
-            title: 'Eletrônicos',
-            cover: 'https://picsum.photos/id/0/1000/300'
+            title: "Eletrônicos",
+            cover: "https://picsum.photos/id/0/1000/300"
         },
         {
             id: 2,
-            title: 'Paisagens',
-            cover: 'https://picsum.photos/id/10/1000/300'
+            title: "Paisagens",
+            cover: "https://picsum.photos/id/10/1000/300"
         },
         {
             id: 3,
-            title: 'Acessórios',
-            cover: 'https://picsum.photos/id/21/1000/300'
+            title: "Acessórios",
+            cover: "https://picsum.photos/id/21/1000/300"
         }
     ],
     products: [
