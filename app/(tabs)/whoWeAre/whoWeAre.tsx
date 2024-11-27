@@ -22,7 +22,7 @@ export function whoWeAre() {
       <View >
       <Text >Book</Text>
 
-      <Button text="Começar as Compras" function={handlePressButton}/>
+      <Button text="Conhecer filial de São Paulo" function={handlePressButtonSP}/>
 
     </SafeAreaView>
   );
