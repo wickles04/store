@@ -19,13 +19,15 @@ export default function index() {
         resizeMode='contain'
         style={styles.logo}
       />
-      <View style={styles.tituloContainer}>
-      <Text style={[styles.titulo, styles.destaque]}>Book</Text>
-      <Text style={styles.titulo}>Store</Text>
+      <View style={styles.buttonAreaContainer}>
+        <View style={styles.tituloContainer}>
+        <Text style={[styles.titulo, styles.destaque]}>Book</Text>
+        <Text style={styles.titulo}>Store</Text>
 
+        </View>
+        <Text style={styles.text}>Aqui onde seu dinheiro vira saudade!!</Text>
+        <Button text="Começar as Compras" function={handlePressButton}/>
       </View>
-      <Text>Aqui onde seu dinheiro vira saudade!!</Text>
-      <Button text="Começar as Compras" function={handlePressButton}/>
 
     </SafeAreaView>
   );
