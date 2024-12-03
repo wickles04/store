@@ -4,7 +4,7 @@ import { getAllCategories } from "../../../services/category";
 import { CategoryItem } from "../../../components/CategoryItem/categoryItem";
 const categoryList = getAllCategories();
 
-export default function categories(){
+export default function categoriesScreen(){
 
 
     return(
